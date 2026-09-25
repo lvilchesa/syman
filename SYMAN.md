@@ -31,6 +31,7 @@ Después, cuando la zona esté activa: Email Routing (`contacto@` → wcconstruc
 ---
 
 ## Datos para la migración (fase 0 del protocolo, 25-sep-2026)
+- **Zona limpiada el 25-sep-2026:** quedan dominio, `www`, `mail.`, MX (→ `mail.`) y SPF; se borraron 21 restos de cPanel. Respaldo en `MigracionDNS/respaldos/syman.cl_20260925-171318.json`.
 - DNS: **Bluehost** (`ns1/ns2.bluehost.com`), **sin DNSSEC**. IP 162.241.216.59, **el mismo servidor que el hotel y Licahue** (cuenta `vilchesc`).
 - **Correo:** `contacto@syman.cl` es **solo un reenvío** en Bluehost → **wcconstruccionesyman@gmail.com** (confirmado en cPanel el 25-sep-2026). Se reemplaza con Cloudflare Email Routing, igual que en Licahue. ⚠ Cloudflare exige que el dueño de esa casilla **haga clic en un correo de verificación**: es lo único que habría que pedirle al cliente, y conviene hacerlo antes del cambio de DNS.
 - SPF actual: `v=spf1 a mx include:websitewelcome.com ~all` (de Bluehost). Sin DMARC.
