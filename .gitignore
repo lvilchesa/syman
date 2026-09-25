@@ -1,0 +1,9 @@
+# Nunca subir el PHP de correo (era un relay de spam abierto) ni logs del servidor
+*.php
+error_log
+*.log
+
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
