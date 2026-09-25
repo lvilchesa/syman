@@ -63,6 +63,7 @@ Después, cuando la zona esté activa: Email Routing (`contacto@` → wcconstruc
 - Logo del menú sin el texto "Syman" al lado.
 - Galería: fuera enlaces, ventanas y lupa; las fotos se muestran tal cual (21 probadas, sin errores).
 - Contacto en horizontal (ver v1.0).
+- **Correo `contacto@syman.cl` desactivado en la página** (comentado en `index.html`, bloque "Correo desactivado hasta activar Cloudflare Email Routing"). Contacto = dirección + teléfono. Reactivar quitando el comentario cuando Email Routing esté verificado por el cliente.
 
 ---
 
