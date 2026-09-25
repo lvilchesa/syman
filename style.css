@@ -1989,3 +1989,32 @@ body.app_version .app_iphone_01 img {
 .serv-row > .serv {
     float: none;
 }
+
+/* Datos de contacto en horizontal (no hay mapa ni formulario que los acompañe).
+   Selectores con .contant-info doble porque building.css se carga después y ganaría el empate. */
+.contant-info.contact-horizontal ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: none;
+}
+.contant-info.contact-horizontal ul li {
+    float: none;
+    width: auto;
+    flex: 1 1 220px;
+    max-width: 320px;
+    padding: 0 15px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.contant-info.contact-horizontal .info-shape {
+    position: static;
+    float: none;
+    margin: 0 auto 12px;
+}
+.contant-info.contact-horizontal ul li div.info-content {
+    padding-left: 0;
+}
+.contant-info.contact-horizontal ul li div.info-content p {
+    float: none;
+}

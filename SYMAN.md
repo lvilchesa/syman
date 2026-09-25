@@ -45,7 +45,7 @@
 - Ortografía: estaquedad→estanqueidad, Conózca→Conozca, Porton→Portón, mantencion→mantención, "personal … comprometidos"→comprometido, "que satisfagan"→satisfaga, espacios después de coma, Biobio→Biobío.
 - `js/all.js`: se quitó **retina.js**, que tiraba `exports is not defined` y nunca funcionó.
 - `style.css`: fuera las referencias a `images/bg.png` (no existía) y los `@import` de flaticon, owl.carousel y prettyPhoto (no se usaban). Al final hay un bloque "AJUSTES 2026" con los tres paneles oscuros de servicios a la misma altura (antes se igualaban con `</br></br>`).
-- Contacto centrado (antes quedaba cargado a la izquierda, junto al hueco del formulario comentado).
+- Contacto **en horizontal**: dirección, teléfono y correo lado a lado con el ícono arriba (en celular, uno bajo otro). Antes quedaba una columna angosta a la izquierda, junto al hueco del formulario comentado. CSS en el bloque "AJUSTES 2026" de `style.css`, con selectores `.contant-info.contact-horizontal` porque `building.css` se carga después y si no ganaría.
 
 **Archivos:** de **184 archivos / 61 MB a 59 / 7,9 MB**.
 - Borrados los que no se usaban: fotos de la plantilla en `uploads/building/` (solo se usa `c18.jpg`), duplicados en `images/obras/`, CSS y JS de plugins sin uso, `Thumbs.db`, `index-suspendido.html`, `underco.jpg`, `error_log`. **Todo sigue en `../syman.zip`** (copia íntegra del hosting).
