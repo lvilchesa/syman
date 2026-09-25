@@ -1,14 +1,15 @@
 # SYMAN.md — Registro del sitio syman.cl
 **Cliente:** Syman SPA (Constructora & Montaje), Cabrero, Biobío  
 **Sitio actual:** https://syman.cl (Bluehost, cuenta `vilchesc`, carpeta `public_html/syman/`)  
-**Repo local:** `D:\DEV\Web\ClaudeCode\GitHub\lvilchesa\syman\` → destino **github.com/lvilchesa/syman** (aún no creado)  
+**Repo:** `D:\DEV\Web\ClaudeCode\GitHub\lvilchesa\syman\` → **github.com/lvilchesa/syman** (público)  
+**Revisión:** https://lvilchesa.github.io/syman/ (GitHub Pages habilitado el 25-sep-2026, sin dominio propio todavía)  
 **Última actualización:** 2026-09-25
 
 ---
 
 ## ▶ Punto de retomada (leer primero)
 
-**Estado:** sitio **limpio y probado en local**, con commit local. **Falta crear el repo en GitHub (lvilchesa) y subirlo**, y después migrar el dominio con `D:\DEV\Web\ClaudeCode\PROTOCOLO-MIGRACION-GHPAGES.md`.
+**Estado:** sitio **limpio, subido y publicado** en https://lvilchesa.github.io/syman/ (probado: 21 fotos, sin errores). Falta migrar el dominio con `D:\DEV\Web\ClaudeCode\PROTOCOLO-MIGRACION-GHPAGES.md`.
 
 **Sobre el cliente:** después de enviar la información original, **nunca más mandó nada**; solo paga para mantener el sitio en línea. **No contar con que entregue datos nuevos**: se trabaja con lo que hay.
 
