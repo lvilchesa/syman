@@ -25,7 +25,7 @@
 
 ## Datos para la migración (fase 0 del protocolo, 25-sep-2026)
 - DNS: **Bluehost** (`ns1/ns2.bluehost.com`), **sin DNSSEC**. IP 162.241.216.59, **el mismo servidor que el hotel y Licahue** (cuenta `vilchesc`).
-- **Correo en el hosting:** MX `mail.syman.cl`. `contacto@syman.cl` (publicado en la página) **deja de funcionar si se cancela Bluehost** sin moverlo antes. Si solo se usa para recibir: Cloudflare Email Routing hacia la casilla real (como en Licahue). Hay que averiguar a dónde debería llegar.
+- **Correo:** `contacto@syman.cl` es **solo un reenvío** en Bluehost → **wcconstruccionesyman@gmail.com** (confirmado en cPanel el 25-sep-2026). Se reemplaza con Cloudflare Email Routing, igual que en Licahue. ⚠ Cloudflare exige que el dueño de esa casilla **haga clic en un correo de verificación**: es lo único que habría que pedirle al cliente, y conviene hacerlo antes del cambio de DNS.
 - SPF actual: `v=spf1 a mx include:websitewelcome.com ~all` (de Bluehost). Sin DMARC.
 
 ---
