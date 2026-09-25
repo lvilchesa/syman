@@ -21,7 +21,10 @@
 - **Sin Facebook ni WhatsApp**: no hay datos confirmados.
 - **Pie de página VyASA** (el mismo de El Mundo de Rafa): "Desarrollo y Soporte Vyasa SpA - Hosting SomosWeb". El año se actualiza solo.
 
-**🔴 Pendiente urgente, fuera del repo:** **borrar `enviaemail.php` del hosting** (cPanel → Administrador de archivos → `public_html/syman/enviaemail.php`). Ver la v1.0 más abajo.
+✅ `enviaemail.php` **borrado del hosting** (comprobado: 404, 25-sep-2026).
+
+**Migración (protocolo):** fase 1 ✅ (Pages publicado) · **fase 2 ✅ molde en Cloudflare calza con Bluehost** (27 registros importados, 16 pasados de Proxied a DNS only, respaldo en `MigracionDNS/respaldos/syman.cl_20260925-152141.json`) · **siguiente: fase 3**, cambiar los servidores DNS en NIC.cl a **`venkat.ns.cloudflare.com`** y **`vita.ns.cloudflare.com`**.
+Después, cuando la zona esté activa: Email Routing (`contacto@` → wcconstruccionesyman@gmail.com, **el cliente debe hacer clic en la verificación**), TXT de verificación de GitHub, `aplicar-github` y dominio + HTTPS en Pages.
 
 ---
 
