@@ -23,7 +23,9 @@
 
 ✅ `enviaemail.php` **borrado del hosting** (comprobado: 404, 25-sep-2026).
 
-**Migración (protocolo):** fase 1 ✅ (Pages publicado) · **fase 2 ✅ molde en Cloudflare calza con Bluehost** (27 registros importados, 16 pasados de Proxied a DNS only, respaldo en `MigracionDNS/respaldos/syman.cl_20260925-152141.json`) · **siguiente: fase 3**, cambiar los servidores DNS en NIC.cl a **`venkat.ns.cloudflare.com`** y **`vita.ns.cloudflare.com`**.
+**Correo: Email Routing POSTERGADO a propósito** (25-sep-2026). El cliente usa más su correo personal que `contacto@syman.cl`, y se activará cuando pueda hacer clic en la verificación de Cloudflare. Mientras tanto, el MX en Cloudflare sigue apuntando a `mail.syman.cl` (Bluehost, DNS only), así que el reenvío de Bluehost sigue funcionando. ⚠ **No cancelar Bluehost hasta activar Email Routing.**
+
+**Migración (protocolo):** fase 1 ✅ (Pages publicado) · **fase 2 ✅ molde en Cloudflare calza con Bluehost** (27 registros importados, 16 pasados de Proxied a DNS only, respaldo en `MigracionDNS/respaldos/syman.cl_20260925-152141.json`) · **fase 3 en curso:** NS cambiados en NIC.cl por Gonzalo el 25-sep-2026 (a `venkat` / `vita.ns.cloudflare.com`), esperando que NIC los publique y la zona pase a *active*.
 Después, cuando la zona esté activa: Email Routing (`contacto@` → wcconstruccionesyman@gmail.com, **el cliente debe hacer clic en la verificación**), TXT de verificación de GitHub, `aplicar-github` y dominio + HTTPS en Pages.
 
 ---
