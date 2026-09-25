@@ -3,7 +3,7 @@
 **Sitio actual:** https://syman.cl (Bluehost, cuenta `vilchesc`, carpeta `public_html/syman/`)  
 **Repo:** `D:\DEV\Web\ClaudeCode\GitHub\lvilchesa\syman\` → **github.com/lvilchesa/syman** (público)  
 **Revisión:** https://lvilchesa.github.io/syman/ (GitHub Pages habilitado el 25-sep-2026, sin dominio propio todavía)  
-**Última actualización:** 2026-09-25
+**Última actualización:** 2026-09-25 (v1.1)
 
 ---
 
@@ -16,7 +16,8 @@
 **Decisiones tomadas:**
 - **Se mantiene el diseño original** (plantilla "Landigoo building", Bootstrap 3 + jQuery). Solo se limpió, no se rediseñó.
 - **Sin formulario de contacto.** Contacto solo con teléfono (enlace `tel:`) y correo (`mailto:`). El PHP no entra al repo (`.gitignore`).
-- Las **6 fotos de la galería de oct-2022** (`img221007001-006`) van **sin título** hasta que haya información. Antes decían "Casa 36 m2", lo que era incorrecto.
+- **Galería sin ampliación ni enlaces** (pedido textual del cliente: "sin 'ampliación' al tocar la foto. Así no más. Son imágenes grandes. Sin link"). Son imágenes simples en recuadros de 350 px, sin ventana, sin lupa y sin títulos visibles. Los títulos que existían (Casa 48 m², Piscina…) quedan solo en el `alt`. Las 6 fotos de oct-2022 tienen `alt` genérico.
+- **Logo sin el texto "Syman" al lado** (era redundante, pedido del cliente).
 - **Sin Facebook ni WhatsApp**: no hay datos confirmados.
 - **Pie de página VyASA** (el mismo de El Mundo de Rafa): "Desarrollo y Soporte Vyasa SpA - Hosting SomosWeb". El año se actualiza solo.
 
@@ -38,7 +39,7 @@
 - `enviaemail.php` estaba **copiado de otro cliente** (rectimaquinas.cl) y **activo en producción**: cualquiera podía usarlo para enviar correos a direcciones arbitrarias con texto arbitrario desde el servidor de Bluehost (relay de spam), y elegir el destinatario `@rectimaquinas.cl`. El `error_log` muestra visitas de bots en ago y sep-2026. Nunca funcionó como formulario (los nombres de los campos no coincidían con el HTML). **Se sacó del repo; falta borrarlo del hosting.**
 
 **Código (`index.html` reescrito con la misma estructura y el mismo diseño):**
-- **Galería:** las 7 primeras fotos abrían todas la misma ventana (`id="tcasa36"` repetido). Ahora cada foto tiene su propia ventana (probado con las 21).
+- **Galería:** las 7 primeras fotos abrían todas la misma ventana (`id="tcasa36"` repetido). Se corrigió, y después (v1.1) se quitaron las ventanas por completo.
 - `lang="es"`, meta descripción, sin bloqueo de zoom en celulares, ícono de pestaña (`images/favicon.png`, la grúa amarilla).
 - Teléfono con enlace `tel:` (antes `#` abriendo una pestaña nueva), correo con `mailto:`, sin el Facebook que apuntaba a `#`.
 - Se quitaron el cargador (su GIF no existía), el formulario comentado, párrafos vacíos, `</footer>` huérfano, `src` duplicado y la clase `co-xs-12` (errata).
@@ -53,9 +54,14 @@
 - Íconos de servicios: PNG de 800×800 (~1 MB c/u) mostrados a 90–120 px → JPG de 240×240 (~15 KB c/u).
 - **Fotos sin usar del cliente:** 28 fotos de WhatsApp (dic-2019/ene-2020) + `Photos.zip` (21 fotos) movidas a `../syman-material/fotos-whatsapp-2019-2020/`. **Parecen fotos reales de sus trabajos: sirven para ampliar la galería si se quiere.**
 
+### v1.1 — Pedidos del cliente (2026-09-25)
+- Logo del menú sin el texto "Syman" al lado.
+- Galería: fuera enlaces, ventanas y lupa; las fotos se muestran tal cual (21 probadas, sin errores).
+- Contacto en horizontal (ver v1.0).
+
 ---
 
 ## Notas técnicas
-- **Probar localmente:** `python -m http.server 8766` en la carpeta. La galería necesita las miniaturas **sin** `loading="lazy"`, porque el script de la plantilla las acomoda al cargar y con lazy quedaban invisibles.
+- **Probar localmente:** `python -m http.server 8766` en la carpeta. Las fotos de la galería van **sin** `loading="lazy"`: con lazy quedaban invisibles en la plantilla.
 - **Cuenta de git:** este repo usa el correo global (lvilchesa), que es correcto porque el destino es lvilchesa. Para hacer push hace falta el login de lvilchesa (el Administrador de credenciales de Windows tiene YN-TGS). Se puede usar GitHub Desktop con esa cuenta.
 - **GitHub Pages gratis exige repo público.**
